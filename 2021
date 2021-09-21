@@ -1,21 +1,32 @@
-#mainigais numbers
+#Mainīgais bibliotēka
 
-num1 = 6 #int
-num2 = 3.5 #loat
+ # {}, katrai vērtibai ir sava atslēga
 
-sum = num1 + num2
+ pirmais = {'atsl1':'vert1', 'atsl2' :'vert2'}
+ print(pirmais)
 
-print(sum)
+ print(pirmais['atsl1'])
 
-print(str(num1) + "plus" + str(num2) + "vienāds ar" +str(sum))
+ otrais = {'atsl1':[1,2,3], 'atsl2': 'Teksts' , 'atsl3' :5}
 
-print(num1, "plus" , num2, "vienāds ar" , sum)
+ print(otrais['atsl1'],otrais['atsl3'])
 
-#ievade
+ tresais = {'Mācību priekšmeti' :{'Matemātika' :5, "Latviešu valoda":[6,8,5], "Programēšana" :4}}
+ 
+ print(tresais["Mācību priekšmeti"]["Latviešu valoda"][2])
 
-num1 = int(input("Ievadi skaitli: "))
-num2 = int(input("Ievadi otro skaitli: "))
+ #Tukšas bibliotēkas izveide
 
-sum = num1+num2
+ pirmais = {}
+ pirmais['koks'] = 'bērzs'
+ pirmais ['ūdenstilpe'] = 'upe'
 
-print(sum)
+ tresais['Mācību priekšmeti']['Matemātika'] = [5, 'upe']
+ print(tresais)
+
+ print(pirmais)
+
+ print(pirmais.keys())
+ print(pirmais.values())
+
+print(pirmais.items())
